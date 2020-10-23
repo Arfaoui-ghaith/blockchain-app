@@ -27,14 +27,13 @@ class Block:
 
     def __repr__(self):
         return (
-            f"Block: ["
+            f"Block("
             f"timestamp: {self.timestamp},"
             f"last_hash: {self.last_hash},"
             f"hash: {self.hash},"
             f" data: {self.data},"
             f"difficulty: {self.difficulty},"
-            f"nonce: {self.nonce}"
-            "]"
+            f"nonce: {self.nonce})"
         )
     
     def to_json(self):
